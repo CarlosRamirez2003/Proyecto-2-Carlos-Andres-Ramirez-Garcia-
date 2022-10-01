@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="722.0" style="-fx-background-color: #cce3de;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.HelloController">
+    <children>
+      <Pane fx:id="panelrespuestas" layoutX="144.0" prefHeight="514.0" prefWidth="578.0" style="-fx-background-color: #90e0ef;">
+         <children>
+            <TableView fx:id="tablapreguntasgenerales" layoutX="11.0" layoutY="168.0" prefHeight="326.0" prefWidth="558.0">
+              <columns>
+                <TableColumn fx:id="clpreguntas" prefWidth="75.0" text="preguntas" />
+                <TableColumn fx:id="clpunteo" prefWidth="75.0" text="punteo" />
+                  <TableColumn fx:id="cltiempo" prefWidth="75.0" text="tiempo" />
+                  <TableColumn fx:id="clcorrecta" prefWidth="75.0" text="correcta" />
+                  <TableColumn fx:id="clincorrecta1" prefWidth="75.0" text="incorrecta1" />
+                  <TableColumn fx:id="clincorrecta2" prefWidth="75.0" text="incorrecta2" />
+                  <TableColumn fx:id="clincorrecta3" prefWidth="75.0" text="incorrecta3" />
+              </columns>
+            </TableView>
+         </children></Pane>
+        <Pane fx:id="panelencuestas" prefHeight="514.0" prefWidth="143.0" style="-fx-background-color: #a0c4e2;">
+            <children>
+                <VBox alignment="TOP_CENTER" layoutX="9.0" layoutY="208.0" prefHeight="253.0" prefWidth="124.0" spacing="20.0" style="-fx-background-color: ·a0c4e2;">
+                    <children>
+                        <Label prefHeight="27.0" prefWidth="117.0" text="MENU PRINCIPAL">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                        <Button fx:id="btnEncuestas" mnemonicParsing="false" onAction="#onClic" text="Crear Encuesta" />
+                  <Button fx:id="btnpreguntas" mnemonicParsing="false" onAction="#onClic" prefHeight="25.0" prefWidth="131.0" text="Responder Encuesta" />
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+        <Pane fx:id="panelEncuestas" layoutX="143.0" onMouseClicked="#seleccionar" prefHeight="514.0" prefWidth="578.0" style="-fx-background-color: caf0f8;">
+            <children>
+                <TableView fx:id="tablaencuestas" layoutX="32.0" layoutY="157.0" onMouseClicked="#seleccionar" prefHeight="286.0" prefWidth="511.0" style="-fx-background-color: #a0c4e2;">
+                    <columns>
+                        <TableColumn fx:id="columpin" prefWidth="75.0" text="PIN" />
+                        <TableColumn fx:id="columtitulo" prefWidth="108.0" text="Titulo" />
+                        <TableColumn fx:id="columdescripcion" prefWidth="225.0" text="Descripcion" />
+                  <TableColumn fx:id="columestado" prefWidth="102.0" text="estado" />
+                    </columns>
+                </TableView>
+            <Button fx:id="butoon" defaultButton="true" layoutX="28.0" layoutY="462.0" mnemonicParsing="false" onAction="#cambiarventana" text="Agregar Cuestionario " />
+            <Button defaultButton="true" layoutX="189.0" layoutY="462.0" mnemonicParsing="false" onAction="#Activar" prefHeight="25.0" prefWidth="95.0" text="Activar " />
+            <Label alignment="CENTER" layoutX="53.0" layoutY="35.0" prefHeight="25.0" prefWidth="106.0" style="-fx-background-radius: 15 15 15 15;" text="PIN PREGUNTAS">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="13.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutX="207.0" layoutY="35.0" prefHeight="25.0" prefWidth="77.0" style="-fx-background-radius: 10 10 10 10;" text="TITULO">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="13.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutX="365.0" layoutY="35.0" prefHeight="25.0" prefWidth="87.0" style="-fx-background-coor: #6e898; -fx-background-radius: 10 10 10 10;" text="DESCRIPCION">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="13.0" />
+               </font></Label>
+            <Label alignment="CENTER" layoutX="53.0" layoutY="88.0" prefHeight="25.0" prefWidth="80.0" style="-fx-background-radius: 10 10 10;" text="PIN">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="13.0" />
+               </font></Label>
+            <Button fx:id="clonar" defaultButton="true" layoutX="317.0" layoutY="462.0" mnemonicParsing="false" onAction="#clonar" prefHeight="19.0" prefWidth="59.0" text="colonar" />
+            <Label alignment="CENTER" layoutX="202.0" layoutY="88.0" prefHeight="25.0" prefWidth="87.0" style="-fx-background-radius: 10 10 10 10;" text="ESTADO">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtpinpreguntas" alignment="CENTER" layoutX="53.0" layoutY="61.0" prefHeight="17.0" prefWidth="106.0" text="sin seleccionar " />
+            <Label fx:id="txtpin" alignment="CENTER" layoutX="55.0" layoutY="115.0" prefHeight="17.0" prefWidth="95.0" text="sin seleccionar" />
+            <Label fx:id="txttitulo" alignment="CENTER" layoutX="207.0" layoutY="61.0" prefHeight="17.0" prefWidth="77.0" text="sin seleccionar" />
+            <Label fx:id="txtestado" alignment="CENTER" layoutX="207.0" layoutY="115.0" prefHeight="17.0" prefWidth="87.0" text="sin seleccionar" />
+            <Label fx:id="txtdescripcion" alignment="CENTER" layoutX="369.0" layoutY="61.0" prefHeight="17.0" prefWidth="80.0" text="sin seleccionar" />
+            <Label alignment="CENTER" layoutX="132.0" layoutY="-9.0" prefHeight="33.0" prefWidth="278.0" style="-fx-background-color: #a0c4e2; -fx-background-radius: 10 10 10 10;" text="Infomracion pregunta seleccionada">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="14.0" />
+               </font></Label>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

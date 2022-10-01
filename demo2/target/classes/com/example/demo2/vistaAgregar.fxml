@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.controladorvistaagregar">
+    <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="370.0" style="-fx-background-color: #90e0ef;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <AnchorPane prefHeight="400.0" prefWidth="370.0" style="-fx-background-color: #6e8898;">
+                <children>
+                    <Label alignment="CENTER" layoutX="63.0" layoutY="14.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="42.0" prefWidth="270.0" style="-fx-background-color: #cfe8ef; -fx-background-radius: 20 20 20 20;" text="INGRESAR ENCUESTA ">
+                  <font>
+                     <Font name="Droid Sans Mono" size="18.0" />
+                  </font></Label>
+                    <VBox layoutX="31.0" layoutY="85.0" prefHeight="107.0" prefWidth="112.0" spacing="20.0">
+                        <children>
+                            <Label alignment="CENTER" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #cfe8ef; -fx-background-radius: 10 10 10 10;" text="Titulo">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </Label>
+                            <Label alignment="CENTER" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #cfe8ef; -fx-background-radius: 10 10 10 10;" text="Descripcion">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </Label>
+                        </children>
+                    </VBox>
+                    <VBox layoutX="159.0" layoutY="85.0" prefHeight="107.0" prefWidth="197.0" spacing="25.0">
+                        <children>
+                            <TextField fx:id="txttitulo2" alignment="CENTER" promptText="Ingresa el titulo" />
+                            <TextField fx:id="txtdescripcion2" alignment="CENTER" promptText="ingresa la descripcion " />
+                        </children>
+                    </VBox>
+               <HBox alignment="CENTER" layoutX="63.0" layoutY="200.0" prefHeight="100.0" prefWidth="244.0" spacing="80.0">
+                  <children>
+                          <Button fx:id="botoncancelar" defaultButton="true" mnemonicParsing="false" onAction="#salir" text="Cancelar" />
+                          <Button fx:id="botonsiguiente" defaultButton="true" mnemonicParsing="false" onAction="#guardar" text="Siguiente" />
+                  </children>
+               </HBox>
+                </children></AnchorPane>
+        </children>
+    </Pane>
+
+
+</AnchorPane>
