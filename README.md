@@ -2,6 +2,12 @@
 ## UNIVERSIDAD MARIANO GÁLVEZ DE GUATEMALA 
 ## FACULTAD DE INGENIERÍA EN SISTEMAS Curso: Programacion II
 
+## DIAGRAMA DE CLASE 
+
+![image](https://user-images.githubusercontent.com/109763655/193392658-92fe9770-e384-4f10-b571-58b37cfacf60.png)
+
+
+
 # Descripcion:
 ### programacion orientada a objetos y entorno grafico Java FX
 programa que permite crear cuestionarios con sus respectivas preguntas todo esto guardándolo en listas de objetos y mostrándolo en tablas asi mismo permitiendo modificar cada aspecto de los cuestionarios y de las preguntas como por ejemplo cambiar el titulo,puntuacion ,tiempo etc.
